@@ -77,10 +77,10 @@ int main(int argc, char* argv[]) {
 
     std::string text;
     readFileToString(mainFile, text);
-    std::vector<std::string> removeWords = readFileToVector(removeFile);
+    std::vector<std::string> removeWordsList = readFileToVector(removeFile);
 
     std::string result;
-    removeWords(text, removeWords, result);
+    removeWords(text, removeWordsList, result);
 
     std::ofstream outFile(outputFile);
     if (outFile.is_open()) {

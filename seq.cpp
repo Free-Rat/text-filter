@@ -37,7 +37,6 @@ std::vector<std::string> readFileToVector(const std::string& filename) {
 }
 
 bool strcmp_custom(const std::string& str1, const std::string& str2) {
-	// std::cout << "" << "" << "str1: " << str1 << " str2: " << str2 << std::endl;
 	for (size_t i = 0; i < str1.length(); ++i) {
 		if (str1[i] != str2[i]) {
 			return false;
@@ -53,7 +52,6 @@ void removeWords(std::string& text, const std::vector<std::string>& words) {
             size_t wordLen = word.length();
 			std::string analized_str = text.substr(idx, wordLen);
             if (idx + wordLen <= textLen && strcmp_custom(word, analized_str)) { 
-				// std::cout << "Removing: " << word << " at " << idx << std::endl;
 				text.replace(idx, wordLen, wordLen, ' ');
 				idx += wordLen - 1;
 				break; 

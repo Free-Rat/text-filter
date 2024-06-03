@@ -1,0 +1,41 @@
+Measure-Command {.\tomek_seq.exe}
+
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 1
+Milliseconds      : 140
+Ticks             : 11408255
+TotalDays         : 1,32039988425926E-05
+TotalHours        : 0,000316895972222222
+TotalMinutes      : 0,0190137583333333
+TotalSeconds      : 1,1408255
+TotalMilliseconds : 1140,8255
+
+Measure-Command {.\tomek_omp.exe}
+
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 0
+Milliseconds      : 372
+Ticks             : 3723113
+TotalDays         : 4,30915856481481E-06
+TotalHours        : 0,000103419805555556
+TotalMinutes      : 0,00620518833333333
+TotalSeconds      : 0,3723113
+TotalMilliseconds : 372,3113
+
+Measure-Command {.\tomek_cuda.exe}
+
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 0
+Milliseconds      : 161
+Ticks             : 1617863
+TotalDays         : 1,87252662037037E-06
+TotalHours        : 4,49406388888889E-05
+TotalMinutes      : 0,00269643833333333
+TotalSeconds      : 0,1617863
+TotalMilliseconds : 161,7863
